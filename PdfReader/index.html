@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script src="jquery-1.11.1.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+            type:"GET",
+            url: "https://www.cs.tut.fi/~jkorpela/latin9.pdf",
+            contentType: "application/json; charset=utf-8",
+             dataType:"jsonp",
+             jsonp:"mycallback",
+            success: function(data){
+            	console.log(data);
+            },
+            error: function(data){
+            	console.log(data)
+            }
+        });
+	});
+</script>
+	<body>
+		<!-- <iframe src="https://www.cs.tut.fi/~jkorpela/latin9.pdf"></iframe> -->
+	</body>
+</html>

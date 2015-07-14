@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var a=["a","b","a","a"];
+
+
+            function match(start,i){
+	            if(i+1<=a.length){
+	            	if(a[0]===a[i])
+	            		match(0,i+1);
+	            	
+	            	else
+	            		console.log("not same");	
+	            	}
+            }
+            	
+            	
+            match(0,1);
+            var b="abc";
+            function permutations(){
+            	for(i=0;i<=b.length-1;i++){
+            		temp=b[i];
+            		b[i]=b[i+1];
+            		if(i==b.length-1)
+            			b[i]=temp;
+            	}
+            		console.log(b);
+            	
+            }
+           var algorithms={
+           		matchAll:function(){
+
+           		},
+           		palidrome:function(){
+
+           		},
+           		prime:function(){
+
+           		},
+           		factorial:function(){
+
+           		},
+           		sum:function(a,b){
+           			var locala=Number(a);
+           			var localb=Number(b);
+           			var max=Number.MAX_SAFE_INTEGER;
+           			if(locala >max || localb>max){
+           				var stringa=a+"";
+           				var stringb=b+"";
+           				var appendZeroes="";
+           				var localLength;
+           				var temp;
+           				if(stringa.length > stringb.length){
+           					localLength=stringa.length - stringb.length;
+           				}
+           				else if(stringa.length > stringb.length){
+           					localLength=stringb.length - stringa.length;
+           				}
+           				else{
+           					//localLength=stringa.length;
+           				}
+           				for(var i=0;i<localLength.length;i++){
+           					temp=temp+"0";
+           				}
+           				alert(temp);
+           			}
+           			else{
+           				return locala + localb;
+           			}
+           			this.divide=function(){
+
+           			}
+           		},
+              formatString:function(input){
+                //alert(input);
+                input= input.split('').reverse().join('');
+                //input=input.reverse();
+                var test=[];
+                for(var i=0;i<input.length;i++){
+                  if((i)%3===0 && i!=0){
+                    test.push(",");
+                  }
+                   test.push(input[i]);
+                   
+                }
+                console.log(test.reverse().join(""));
+              },
+              separateZeroesAndOnes:function(input){
+                var minIndex=0;
+                var maxIndex=input.length;
+
+                var pivot=(minIndex+maxIndex)/2;
+
+                for(var i= in input){
+
+                }
+              },
+              BtoD:function(n,r){
+                  if(n>0&& n!=null && n!=undefined){
+                      if(n==1){
+                        return n;
+                      }
+                      else if (n==2){
+                        return "10";
+                      }
+                      if(n/2>1){
+                        r=r+n%2;
+                        BtoD(n/2,r)
+                      }
+                  }
+                  else{
+                    return;
+                  }
+              },
+              closure1:function{
+
+              }
+
+           }
+           
+            //permutations();
+            algorithms.formatString("10000000000000");
+            //algorithms.formatString("10000000000000");
+        </script>
+    </body>
+</html>
