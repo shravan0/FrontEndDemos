@@ -60,8 +60,11 @@
            		prime:function(){
 
            		},
-           		factorial:function(){
-
+           		factorial:function(no){
+           			if(no!=null && !isNaN(no) && no>0){
+           				return algorithms.factorial(no-1);
+           			}
+				
            		},
            		sum:function(a,b){
            			var locala=Number(a);
